@@ -24,6 +24,11 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "jest": {
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/ts-jest"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -35,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "ts-jest": "^26.3.0"
   }
 }
